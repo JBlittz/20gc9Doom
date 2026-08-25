@@ -1,0 +1,76 @@
+# Godot
+.godot/
+.import/
+.export/
+
+# Builds
+/bin/
+/build/
+/dist/
+*.pck
+
+# C# / .NET
+obj/
+.vs/
+*.csproj
+*.sln
+*.slnx
+*.user
+*.userprefs
+*.suo
+*.pidb
+*.mdb
+*.opendb
+*.VC.db
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+!*.code-workspace
+
+# JetBrains Rider
+.idea/
+*.DotSettings.user
+
+# Logs
+*.log
+
+# Crash dumps
+*.stackdump
+
+# OS
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Temporary files
+*.tmp
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# Compiled binaries
+*.dll
+*.pdb
+
+# Archives
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+*.bz2

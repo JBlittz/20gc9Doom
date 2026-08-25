@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://bebf3vodmnhqv"]
+
+[ext_resource type="Script" uid="uid://c40u1f55o12tq" path="res://Scripts/Movement.cs" id="1_6t5aa"]
+[ext_resource type="PackedScene" uid="uid://bidsoawnwy04h" path="res://Scenes/hud.tscn" id="1_v0iea"]
+[ext_resource type="Script" uid="uid://cqgv8bsf4kppt" path="res://Scripts/Camera.cs" id="2_6t5aa"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_fv1yn"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_k7uyn"]
+radius = 0.6
+height = 2.4
+
+[node name="Player" type="CharacterBody3D" unique_id=729165331 node_paths=PackedStringArray("camera")]
+script = ExtResource("1_6t5aa")
+camera = NodePath("Camera3D")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=379935224]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_fv1yn")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1312121604]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0)
+script = ExtResource("2_6t5aa")
+
+[node name="HUD" parent="." unique_id=234036635 instance=ExtResource("1_v0iea")]
+
+[node name="HurtBox" type="Area3D" parent="." unique_id=2041745961]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="HurtBox" unique_id=2007125942]
+shape = SubResource("CapsuleShape3D_k7uyn")

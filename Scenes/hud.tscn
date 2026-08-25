@@ -1,0 +1,214 @@
+[gd_scene format=3 uid="uid://bidsoawnwy04h"]
+
+[ext_resource type="Texture2D" uid="uid://d4e66kg4gyt0r" path="res://Sprites/HUD.png" id="1_e0onf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k7uyn"]
+atlas = ExtResource("1_e0onf")
+region = Rect2(10, 23, 361, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e0onf"]
+atlas = ExtResource("1_e0onf")
+region = Rect2(379, 22, 24, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t1xeu"]
+atlas = ExtResource("1_e0onf")
+region = Rect2(429, 22, 24, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bjfho"]
+atlas = ExtResource("1_e0onf")
+region = Rect2(504, 22, 24, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6fbih"]
+atlas = ExtResource("1_e0onf")
+region = Rect2(454, 22, 24, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fccik"]
+atlas = ExtResource("1_e0onf")
+region = Rect2(479, 22, 24, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_36asn"]
+atlas = ExtResource("1_e0onf")
+region = Rect2(379, 154, 24, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8jye8"]
+atlas = ExtResource("1_e0onf")
+region = Rect2(429, 154, 24, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_43w4t"]
+atlas = ExtResource("1_e0onf")
+region = Rect2(504, 154, 24, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7gr8i"]
+atlas = ExtResource("1_e0onf")
+region = Rect2(454, 154, 24, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ep0j"]
+atlas = ExtResource("1_e0onf")
+region = Rect2(479, 121, 24, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4f5kr"]
+atlas = ExtResource("1_e0onf")
+region = Rect2(379, 88, 24, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_piegi"]
+atlas = ExtResource("1_e0onf")
+region = Rect2(429, 88, 24, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i2avg"]
+atlas = ExtResource("1_e0onf")
+region = Rect2(504, 88, 24, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1a2va"]
+atlas = ExtResource("1_e0onf")
+region = Rect2(454, 88, 24, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ssfue"]
+atlas = ExtResource("1_e0onf")
+region = Rect2(479, 88, 24, 31)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fv1yn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e0onf")
+}],
+"loop": 1,
+"name": &"FullFire",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t1xeu")
+}],
+"loop": 1,
+"name": &"FullHit",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bjfho")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6fbih")
+}],
+"loop": 1,
+"name": &"FullIdle",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fccik")
+}],
+"loop": 1,
+"name": &"FullRun",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_36asn")
+}],
+"loop": 1,
+"name": &"HurtFire",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8jye8")
+}],
+"loop": 1,
+"name": &"HurtHit",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_43w4t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7gr8i")
+}],
+"loop": 1,
+"name": &"HurtIdle",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5ep0j")
+}],
+"loop": 1,
+"name": &"HurtRun",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4f5kr")
+}],
+"loop": 1,
+"name": &"MidFire",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_piegi")
+}],
+"loop": 1,
+"name": &"MidHit",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i2avg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1a2va")
+}],
+"loop": 1,
+"name": &"MidIdle",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ssfue")
+}],
+"loop": 1,
+"name": &"MidRun",
+"speed": 1.0
+}]
+
+[node name="HUD" type="Control" unique_id=234036635]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1171454808]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+alignment = 2
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer" unique_id=878448998]
+layout_mode = 2
+texture = SubResource("AtlasTexture_k7uyn")
+expand_mode = 5
+
+[node name="FaceHUD" type="AnimatedSprite2D" parent="." unique_id=1136935913]
+position = Vector2(511, 597)
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_fv1yn")
+animation = &"FullIdle"
+autoplay = "FullIdle"
+
+[node name="HealthLabel" type="Label" parent="." unique_id=458149397]
+layout_mode = 0
+offset_left = 177.0
+offset_top = 557.0
+offset_right = 308.0
+offset_bottom = 612.0
+theme_override_colors/font_color = Color(0.85814106, 0.050306942, 0.091038086, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.39215687)
+theme_override_font_sizes/font_size = 32
+text = "100%"
+horizontal_alignment = 1
+vertical_alignment = 1
